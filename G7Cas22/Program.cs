@@ -8,6 +8,15 @@ namespace G7Cas22
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Jednodimenzionalni nizovi:\n");
+            arrays();
+            Console.WriteLine("Višedimenzionalni nizovi:\n");
+            multidimensionalArrays();
+            Console.WriteLine("Ugnježdeni (nested) nizovi:\n");
+            nestedArrays();
+            Console.WriteLine("Parametarski nizovi:\n");
+            ParamArrays();
+            Console.WriteLine("Liste:\n");
             Lists();
 
             Console.ReadKey();
@@ -21,7 +30,7 @@ namespace G7Cas22
             string unos;
             do
             {
-                Console.Write("Unesite broj (ostaviti prazan unos za kraj rada) >");
+                Console.Write("Unesite broj (ostaviti prazno za kraj rada) >");
                 unos = Console.ReadLine();
 
                 if (unos != "")
@@ -33,7 +42,7 @@ namespace G7Cas22
 
             do
             {
-                Console.Write("Unesite rec (ostaviti prazan unos za kraj rada) >");
+                Console.Write("Unesite reč (ostaviti prazno za kraj rada) >");
                 unos = Console.ReadLine();
                 if (unos != "")
                 {
@@ -45,6 +54,7 @@ namespace G7Cas22
             int rezultat = SumElementsList(brojevi);
             Console.WriteLine("Suma unetih brojeva je: {0}", rezultat);
 
+            Console.WriteLine("Unete reči su: ");
             foreach(string rec in reci)
             {
                 Console.Write("{0} ", rec);
